@@ -1,0 +1,15 @@
+# Quartus generated files
+db/
+incremental_db/
+output_files/
+
+# Local workspace
+*.qws
+
+# Backup files
+*.bak
+
+# Simulation logs
+*.log
+*.wlf
+transcript
