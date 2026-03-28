@@ -33,29 +33,9 @@ This design allows users to not only execute instructions but also actively inte
 https://github.com/user-attachments/assets/d6ee9c8b-3eb9-4e2e-94b3-174882c231cc
 
 
-readme.md에 중간에 영상 넣을려고 하는데 그 영상 넣는거 밑에 한글로 단거 영어로 원본 글이랑 어울리게 달아주라 다른부분은 손대지 말고
-
-Thought for 6s
-가능합니다.
-
-영상 아래에 달아둔 한글 문구 부분만 영어로 자연스럽게 바꿔드릴게요.
-다른 부분은 건드리지 않고, 원래 README 분위기에 맞춰서 맞추겠습니다.
-
-영상 들어간 부분만 이렇게 보내주세요.
-
-<video ...></video>
-
-여기에 한글 설명
-또는 README에서 그 부분만 그대로 붙여주시면,
-제가 한글 설명만 영어로 바꾼 버전으로 바로 드리겠습니다.
-
-
-
-붙여넣은 마크다운(1).md
-파일
-
-Thought for 7s
-아래 한글로 적힌 부분만 영어로 바꾸시면 됩니다. 다른 부분은 손대지 않았습니다. 
+<div align="center">
+  <img width="100" height="300" alt="image" src="https://github.com/user-attachments/assets/e4c21e52-947f-43f8-802e-624c4bbe5d76" />
+</div>
 
 
 ### Changes Made for the Demonstration
