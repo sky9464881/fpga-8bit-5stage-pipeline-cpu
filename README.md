@@ -33,7 +33,7 @@ This design allows users to not only execute instructions but also actively inte
 https://github.com/user-attachments/assets/d6ee9c8b-3eb9-4e2e-94b3-174882c231cc
 
 
-<img width="524" height="699" alt="image" src="https://github.com/user-attachments/assets/e4c21e52-947f-43f8-802e-624c4bbe5d76" />
+<img width="100" height="300" alt="image" src="https://github.com/user-attachments/assets/e4c21e52-947f-43f8-802e-624c4bbe5d76" />
 
 ### Instruction Changes for the Demonstration
 
