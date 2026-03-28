@@ -33,7 +33,98 @@ This design allows users to not only execute instructions but also actively inte
 https://github.com/user-attachments/assets/d6ee9c8b-3eb9-4e2e-94b3-174882c231cc
 
 
-<img width="100" height="300" alt="image" src="https://github.com/user-attachments/assets/e4c21e52-947f-43f8-802e-624c4bbe5d76" />
+readme.md에 중간에 영상 넣을려고 하는데 그 영상 넣는거 밑에 한글로 단거 영어로 원본 글이랑 어울리게 달아주라 다른부분은 손대지 말고
+
+Thought for 6s
+가능합니다.
+
+영상 아래에 달아둔 한글 문구 부분만 영어로 자연스럽게 바꿔드릴게요.
+다른 부분은 건드리지 않고, 원래 README 분위기에 맞춰서 맞추겠습니다.
+
+영상 들어간 부분만 이렇게 보내주세요.
+
+<video ...></video>
+
+여기에 한글 설명
+또는 README에서 그 부분만 그대로 붙여주시면,
+제가 한글 설명만 영어로 바꾼 버전으로 바로 드리겠습니다.
+
+
+
+붙여넣은 마크다운(1).md
+파일
+
+Thought for 7s
+아래 한글로 적힌 부분만 영어로 바꾸시면 됩니다. 다른 부분은 손대지 않았습니다. 
+
+
+### Changes Made for the Demonstration
+
+Initially, the CPU used the data values stored in ROM.
+
+It was modified to allow the use of RAM data values.
+
+The `LDO` instruction was changed to `LDA`.
+
+The data addresses to be read were changed to addresses 3, 4, and 5.
+
+As a result, the CPU reads the data stored in RAM addresses 3, 4, and 5, performs the required operations, and stores the results in RAM addresses 1 and 2.
+
+### Added RAM Write Access for the Demonstration
+
+A write function was implemented using `SW8`.
+
+When the switch is turned on, the system enters input mode.
+
+In this state, the user can select the 8-bit data to write using toggle switches `SW0` to `SW7`.
+
+When the switch is turned off, the data is stored according to the currently enabled bit values.
+조금 더 README다운 톤으로 다듬은 버전도 가능합니다.
+
+
+그렇게 다듬어줘
+
+README 톤에 맞게 문장만 조금 더 자연스럽게 다듬어서 보겠습니다. 한글 부분만 영어로 바꾼 버전 기준으로 정리하겠습니다.
+
+Thought for 20s
+README 전체 톤에 맞춰서, 설명 문장만 조금 더 자연스럽게 다듬으면 아래처럼 쓰시면 됩니다. 원문 내용은 유지했고 표현만 정리했습니다. 
+
+
+### Instruction Changes for the Demonstration
+
+The original version used data values stored in ROM.
+
+For the demonstration, the design was modified to use data stored in RAM instead.
+
+The `LDO` instruction was replaced with `LDA`.
+
+The target data addresses were changed to locations 3, 4, and 5.
+
+As a result, the CPU reads the values stored in RAM addresses 3, 4, and 5, performs the required operations, and stores the results in RAM addresses 1 and 2.
+
+### Added RAM Write Functionality for the Demonstration
+
+A RAM write function was implemented using `SW8`.
+
+When the switch is turned on, the system enters input mode.
+
+In this mode, the user can select the 8-bit data value to write using toggle switches `SW0` to `SW7`.
+
+When the switch is turned off, the selected data is written based on the currently enabled bit values.
+한 가지만 체크하면, README 다른 부분에는 LOD로 적혀 있는데 여기만 LDO로 되어 있어서 오타일 가능성이 있습니다. 그 부분은 한 번만 확인해보시는 게 좋습니다. 
+
+
+
+<img width="200" height="500" alt="image" src="https://github.com/user-attachments/assets/e4c21e52-947f-43f8-802e-624c4bbe5d76" />
+
+이거 중앙에 오게 해줘
+
+Thought for a couple of seconds
+아래처럼 감싸면 가운데 정렬됩니다.
+
+<p align="center">
+  <img width="100" height="300" alt="image" src="https://github.com/user-attachments/assets/e4c21e52-947f-43f8-802e-624c4bbe5d76" />
+</p>
 
 ### Instruction Changes for the Demonstration
 
