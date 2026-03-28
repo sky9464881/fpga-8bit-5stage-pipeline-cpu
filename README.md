@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/d6ee9c8b-3eb9-4e2e-94b3-174882c231cc
 
 
 <div align="center">
-  <img width="100" height="300" alt="image" src="https://github.com/user-attachments/assets/e4c21e52-947f-43f8-802e-624c4bbe5d76" />
+  <img width="200" height="500" alt="image" src="https://github.com/user-attachments/assets/e4c21e52-947f-43f8-802e-624c4bbe5d76" />
 </div>
 
 
