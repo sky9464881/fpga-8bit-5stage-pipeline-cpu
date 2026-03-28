@@ -1,5 +1,14 @@
 # 8-bit FSM CPU with 5-Stage Pipelining and Hardware Interaction
 
+
+
+
+https://github.com/user-attachments/assets/d6ee9c8b-3eb9-4e2e-94b3-174882c231cc
+
+
+
+
+
 ### Authors
 - Hwapyeong Kim
 - Junsoo Moon
@@ -43,6 +52,7 @@ This project discusses the conceptual differences between these architectures an
 ---
 
 ## 3. Starting Point
+<img width="904" height="515" alt="image" src="https://github.com/user-attachments/assets/dfff40c5-2af0-4abb-8074-96254d540c16" />
 
 The base design was an open-source 8-bit FSM-controlled RISC CPU by Qi Liu (Tsinghua University). The selection was based on:
 - Simplicity and clarity for learning.
@@ -54,6 +64,7 @@ The instruction set includes long and short type instructions such as LOD, LDA, 
 ---
 
 ## 4. Improved Process
+<img width="888" height="521" alt="image" src="https://github.com/user-attachments/assets/2f343fcb-0dda-42ec-ade6-9971d847e927" />
 
 ### Stage 1: Basic 3-Stage Pipeline
 The initial step involved creating a 3-stage pipeline (IF → ID → EX) from the FSM architecture. Modules like `rom`, `counter`, and `addr_mux` were unified under the IF stage.
@@ -62,6 +73,9 @@ The initial step involved creating a 3-stage pipeline (IF → ID → EX) from th
 MEM and WB stages were added, following the conventional RISC layout. Each pipeline register (`IF_ID`, `ID_EX`, `EX_MEM`, `MEM_WB`) was modularized to isolate signals across stages. Forwarding logic was introduced for data hazard resolution.
 
 ### Stage 3: FPGA Integration
+<img width="1013" height="521" alt="image" src="https://github.com/user-attachments/assets/f828b739-f6cf-48f0-881e-b5b1e99f8187" />
+
+
 Using switches and buttons:
 - Users can write values to RAM via toggles.
 - ROM, RAM, or Register contents can be selected and read.
@@ -86,6 +100,9 @@ Forwarding allowed the CPU to run at 2500ps vs. 3100ps with stalls only. Multipl
 ## 6. Results
 
 ![image](https://github.com/user-attachments/assets/d6de593b-2805-473d-99f4-76b5fced3ea4)
+
+<img width="965" height="505" alt="image" src="https://github.com/user-attachments/assets/206423ba-94dc-428e-8b80-bd70bd7ed794" />
+
 
 Initial 3-stage implementation executed within ~2300ps. Expansion to 5 stages slightly increased execution time (~2500ps), as the added MEM stage consumed an additional cycle even when unnecessary. Optimization techniques like forwarding improved timing significantly. However, ideal performance depends on:
 - Conditional MEM stage activation.
