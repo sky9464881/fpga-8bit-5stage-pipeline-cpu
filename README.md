@@ -1,14 +1,5 @@
 # 8-bit FSM CPU with 5-Stage Pipelining and Hardware Interaction
 
-
-
-
-https://github.com/user-attachments/assets/d6ee9c8b-3eb9-4e2e-94b3-174882c231cc
-
-
-
-
-
 ### Authors
 - Hwapyeong Kim
 - Junsoo Moon
@@ -35,6 +26,37 @@ https://github.com/user-attachments/assets/d6ee9c8b-3eb9-4e2e-94b3-174882c231cc
 This project explores the transformation of an FSM-based 8-bit CPU into a pipelined architecture, implementing a classic 5-stage RISC-style pipeline: IF (Instruction Fetch), ID (Instruction Decode), EX (Execute), MEM (Memory Access), and WB (Write Back). Designed in Verilog HDL, each stage was modularized to reflect real CPU architecture. The CPU was deployed on a Cyclone V FPGA board (Terasic DE10-Standard), where hardware-level interaction is enabled via switches and buttons for ROM, RAM, and Register control.
 
 This design allows users to not only execute instructions but also actively interact with memory components by inputting or modifying data using physical switches, observing execution through LEDs and 7-segment displays. Initially aimed at improving performance through pipelining, the project also evolved into an educational tool for learning pipeline architecture, addressing hazards, synchronization, and performance bottlenecks.
+
+
+
+
+https://github.com/user-attachments/assets/d6ee9c8b-3eb9-4e2e-94b3-174882c231cc
+
+
+<img width="524" height="699" alt="image" src="https://github.com/user-attachments/assets/e4c21e52-947f-43f8-802e-624c4bbe5d76" />
+
+### Instruction Changes for the Demonstration
+
+The original version used data values stored in ROM.
+
+For the demonstration, the design was modified to use data stored in RAM instead.
+
+The `LDO` instruction was replaced with `LDA`.
+
+The target data addresses were changed to locations 3, 4, and 5.
+
+As a result, the CPU reads the values stored in RAM addresses 3, 4, and 5, performs the required operations, and stores the results in RAM addresses 1 and 2.
+
+### Added RAM Write Functionality for the Demonstration
+
+A RAM write function was implemented using `SW8`.
+
+When the switch is turned on, the system enters input mode.
+
+In this mode, the user can select the 8-bit data value to write using toggle switches `SW0` to `SW7`.
+
+When the switch is turned off, the selected data is written based on the currently enabled bit values.
+
 
 ---
 
